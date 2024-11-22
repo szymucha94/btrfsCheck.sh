@@ -1,5 +1,6 @@
 # btrfsCheck.sh
 btrfs wrapper for scrubbing and mail/home assistant reporting
+
 Default destination mount point is defined in settings section of this script.
 
 Usage: /usr/sbin/btrfsCheck.sh <option>
@@ -9,7 +10,9 @@ Options:
   help                   Prints this help
 
 Depends on btrfs, obviously. Also curl.
+
 Purpose of this script is to automate btrfs scrubs and basic tests (errors-only) and provide results to Home Assistant and local mail server. Personally used for controlling external HDD array cooling fan (start/stop) and dashboard notifications when failure is detected. errors-only flag is useful when HDDs are connected via USB and they disconnect without btrfs noticing - this causes i/o errors.
+
 Works best when scheduled via crontab.
 
 HA receives statuses within two helper text entities. They need to be created before running the script.
