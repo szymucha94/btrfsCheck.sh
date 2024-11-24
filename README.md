@@ -3,7 +3,7 @@ btrfs wrapper for scrubbing and mail/home assistant reporting
 
 Default destination mount point is defined in settings section of this script.
 
-Usage: /usr/sbin/btrfsCheck.sh '<option>'
+Usage: /usr/sbin/btrfsCheck.sh \<option\>
 
 Options:
 
